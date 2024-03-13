@@ -1,8 +1,0 @@
-torch
-torchtext
-lightning
-
-transformers
-datasets
-
-jupyter
