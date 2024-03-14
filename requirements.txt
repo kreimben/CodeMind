@@ -4,5 +4,6 @@ lightning
 
 transformers
 datasets
+peft
 
 jupyter
