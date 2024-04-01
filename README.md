@@ -1,2 +1,14 @@
+---
+license: mit
+datasets:
+- kreimben/leetcode_with_youtube_captions
+language:
+- en
+metrics:
+- accuracy
+- bleu
+pipeline_tag: text-generation
+---
+
 # CodeMind
-LLM powered Coding Test Question Tutor
+Coding Test Explanatory LLM Model.
