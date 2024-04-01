@@ -2,6 +2,10 @@ transformers
 accelerate
 evaluate
 datasets
+bitsandbytes
 peft
+
+langchain
+langchainhub
 
 jupyter
