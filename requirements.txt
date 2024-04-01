@@ -1,8 +1,6 @@
-torch
-torchtext
-lightning
-
 transformers
+accelerate
+evaluate
 datasets
 peft
 
