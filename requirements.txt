@@ -4,6 +4,8 @@ evaluate
 datasets
 bitsandbytes
 peft
+scikit-learn
+trl
 
 openai
 python-dotenv
@@ -12,3 +14,5 @@ langchain
 langchainhub
 
 jupyter
+
+wandb
