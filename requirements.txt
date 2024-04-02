@@ -5,6 +5,9 @@ datasets
 bitsandbytes
 peft
 
+openai
+python-dotenv
+
 langchain
 langchainhub
 
