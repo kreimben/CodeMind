@@ -7,7 +7,6 @@ peft
 scikit-learn
 trl
 
-openai
 python-dotenv
 
 langchain
