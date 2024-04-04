@@ -1,11 +1,13 @@
 transformers
 accelerate
-evaluate
 datasets
 bitsandbytes
 peft
 scikit-learn
+
 trl
+evaluate
+rouge_score
 
 python-dotenv
 
