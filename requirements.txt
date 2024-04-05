@@ -3,11 +3,10 @@ accelerate
 datasets
 bitsandbytes
 peft
-scikit-learn
-
 trl
 evaluate
-rouge_score
+
+scikit-learn
 
 python-dotenv
 
