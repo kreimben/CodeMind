@@ -5,6 +5,7 @@ bitsandbytes
 peft
 trl
 evaluate
+rouge_score
 
 scikit-learn
 
