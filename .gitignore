@@ -1,6 +1,7 @@
 .idea/
 out/
 wandb/
+.csv
 
 
 ### Python template
