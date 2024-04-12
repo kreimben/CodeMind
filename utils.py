@@ -1,4 +1,4 @@
-def get_completion(query: str, model, tokenizer, device='cuda:0') -> str:
+def get_completion(query: str, model, tokenizer, device='cuda:0', max_new_tokens = 512) -> str:
     prompt_template = '<start_of_turn>user ' \
                       'Below is an instruction that describes a task. Write a response that appropriately completes the request. ' \
                       '{query}<end_of_turn>\n' \
@@ -10,7 +10,7 @@ def get_completion(query: str, model, tokenizer, device='cuda:0') -> str:
 
     model_inputs = encodeds.to(device)
 
-    generated_ids = model.generate(**model_inputs, max_new_tokens=512, do_sample=True,
+    generated_ids = model.generate(**model_inputs, max_new_tokens=max_new_tokens, do_sample=True,
                                    pad_token_id=tokenizer.eos_token_id)
     # decoded = tokenizer.batch_decode(generated_ids)
     decoded = tokenizer.decode(generated_ids[0], skip_special_tokens=True)

@@ -1,7 +1,7 @@
 .idea/
 out/
 wandb/
-.csv
+*.csv
 
 
 ### Python template
