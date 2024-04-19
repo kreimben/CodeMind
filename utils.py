@@ -1,17 +1,9 @@
-def get_completion(query: str, model, tokenizer, device='cuda:0', max_new_tokens = 512) -> str:
-    prompt_template = '<start_of_turn>user ' \
-                      'Below is an instruction that describes a task. Write a response that appropriately completes the request. ' \
-                      '{query}<end_of_turn>\n' \
-                      '<start_of_turn>model'
+def get_completion(query: str, model, tokenizer, system_prompt='', device='cuda:0', max_new_tokens=512) -> str:
+    prompt = f'<bos><start_of_turn>user\n{system_prompt} \n\n{query} <end_of_turn>\n<start_of_turn>model'
 
-    prompt = prompt_template.format(query=query)
+    inputs = tokenizer(prompt, return_tensors="pt", padding=True, truncation=True, add_special_tokens=True).to(device)
 
-    encodeds = tokenizer(prompt, return_tensors="pt", add_special_tokens=True)
+    generated_ids = model.generate(**inputs, max_length=500, num_return_sequences=1)
 
-    model_inputs = encodeds.to(device)
-
-    generated_ids = model.generate(**model_inputs, max_new_tokens=max_new_tokens, do_sample=True,
-                                   pad_token_id=tokenizer.eos_token_id)
-    # decoded = tokenizer.batch_decode(generated_ids)
     decoded = tokenizer.decode(generated_ids[0], skip_special_tokens=True)
     return decoded
