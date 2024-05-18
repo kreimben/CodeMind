@@ -23,7 +23,7 @@
 ## 사용된 라이브러리
 - [transformers](https://github.com/huggingface/transformers): 자연어 처리 모델을 위한 라이브러리
 - [datasets](https://github.com/huggingface/datasets): 데이터셋 처리 및 관리 라이브러리
-- [bitsandbytes](https://github.com/facebookresearch/bitsandbytes): 최적화된 연산을 위한 라이브러리
+- [bitsandbytes](https://github.com/TimDettmers/bitsandbytes): 최적화된 연산을 위한 라이브러리
 - [peft](https://github.com/peft/peft): 파인 튜닝을 위한 라이브러리
 - [trl](https://github.com/huggingface/trl): 언어 모델 튜닝을 위한 라이브러리
 - [pandas](https://pandas.pydata.org/): 데이터 조작을 위한 라이브러리
