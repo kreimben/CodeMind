@@ -1,7 +1,8 @@
 # CodeMind
 
 ## 소개
-`CodeMind-gemma-2b`는 코딩 테스트 문제 해결 및 프로그래밍 교육을 지원하는 언어 모델입니다. 이 모델은 LeetCode 사용자 제출물과 관련 유튜브 캡션을 활용하여 문제 해결에 대한 설명과 코드 예제를 제공합니다.
+`CodeMind-gemma-2b`는 코딩 테스트 문제 해결 및 프로그래밍 교육을 지원하는 언어 모델입니다.
+이 모델은 LeetCode 정리글과 관련 유튜브 캡션을 활용하여 문제 해결에 대한 설명과 코드 예제를 제공합니다.
 
 ## 모델 세부 정보
 - **모델 이름**: CodeMind
@@ -16,8 +17,8 @@
 - 관련 코드 스니펫 생성
 
 ## 훈련 데이터
-- **LeetCode 사용자 제출물**: 다양한 알고리즘 문제의 파이썬 솔루션
-- **유튜브 캡션**: LeetCode 문제에 대한 설명 및 단계별 가이드
+- [**LeetCode 사용자 제출물**](https://huggingface.co/datasets/kreimben/leetcode_user_submissions): 다양한 알고리즘 문제의 파이썬 솔루션
+- [**유튜브 캡션**](https://huggingface.co/datasets/kreimben/leetcode_with_youtube_captions): LeetCode 문제에 대한 설명 및 단계별 가이드
 
 ## 사용된 라이브러리
 - [transformers](https://github.com/huggingface/transformers): 자연어 처리 모델을 위한 라이브러리
@@ -31,11 +32,8 @@
 ## 파일 구조
 - **dataset/**: 데이터셋 파일을 포함합니다.
 - **eval/**: 평가 스크립트를 포함합니다.
-- **fine-tuning/**: 미세 조정 관련 노트북 및 스크립트를 포함합니다.
-  - `gemma-1.1-2b-it peft qlora.ipynb`: 미세 조정 과정에 대한 세부 사항이 포함된 노트북입니다.
-- **.gitignore**: Git 무시 규칙이 정의된 파일입니다.
-- **LICENSE**: MIT 라이선스 파일입니다.
-- **README.md**: 프로젝트에 대한 설명 파일입니다.
+- **fine-tuning/**: fine tuning 관련 노트북 및 스크립트를 포함합니다.
+  - `gemma-1.1-2b-it peft qlora.ipynb`: fine tuning 과정에 대한 세부 사항이 포함된 노트북입니다.
 - **demo.ipynb**: 데모 노트북으로 모델 사용 예제가 포함되어 있습니다.
 - **requirements.txt**: 프로젝트 의존성 목록이 포함되어 있습니다.
 - **utils.py**: 유틸리티 함수들이 포함되어 있습니다.
