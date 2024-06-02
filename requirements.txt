@@ -1,4 +1,4 @@
-transformers
+transformers[torch]
 accelerate
 datasets
 bitsandbytes
@@ -7,13 +7,6 @@ trl
 evaluate
 rouge_score
 
-scikit-learn
-
 python-dotenv
 
-langchain
-langchainhub
-
 jupyter
-
-wandb
